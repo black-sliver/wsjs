@@ -68,7 +68,7 @@ public:
     {
         // binary
         EM_ASM({
-            Module.websockets[$0].send(Module.HEAPU8.subarray($1, $1 + $2));
+            Module.websockets[$0].send(HEAPU8.subarray($1, $1 + $2));
         }, _id, data.c_str(), data.length());
     }
 
